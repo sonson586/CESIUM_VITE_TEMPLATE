@@ -1,0 +1,151 @@
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+#cesiumContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+#buttons {
+  position: absolute;
+  left: 10px;
+  right: 0;
+  top: 20px;
+  bottom: 0;
+
+  width: 200px;
+}
+
+#buttons input {
+  width: 150px;
+  height: 30px;
+  margin: 10px;
+}
+
+#layers {
+  position: absolute;
+  left: 20px;
+  right: 0;
+  top: 80px;
+  bottom: 0;
+
+  width: 150px;
+  color: white;
+}
+
+.layers_checkbox {
+  height: 50px;
+  padding: 4px;
+  border: solid 1px white;
+  background: #333;
+}
+
+.display-none {
+  display: none;
+}
+
+/* ****************** 범례 부분 ******************** */
+.legend-efdc {
+  background:url('/public/images/efdc_legend.png') center center;
+}
+
+.legend-kdrum-inflow {
+  background:url('/public/images/kdrum_inflow_legend.png') center center;
+}
+
+.legend-gradient {
+  width: 15px;
+  height: 15px;
+}
+
+/* ****************** 슬라이더 부분 ******************** */
+
+#animationBarContainer {
+  height: 3em;
+  width: 58em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5em;
+  margin: auto;
+  z-index: 1;
+  border: 1px solid #000;
+  border-top: 0;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,.5);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 0 10px;
+}
+
+/* 애니메이션바 날짜 표기 컨테이너*/
+.animation-date-container {
+  width: 115px;
+  height: 20px;
+  color: white;
+}
+
+/* 애니메이션바 슬라이더 컨테이너 */
+.animation-slider-container {
+  position: relative;
+  padding: 0 10px;
+  border: 1px solid #000;
+  background-color: #232323;
+  border-radius: 3px;
+  height: 20px;
+  width: 540px;
+
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+/* 애니메이션바 슬라이더 부분 */
+.range-slider {
+  height: 5px !important;
+}
+
+/* 애니메이션바 슬라이더 동그라미 부분 */
+.range-slider-show-handle>.range-slider-completed:before {
+  width: 10px !important;
+  height: 10px !important;
+  border: 2px solid #FFFFFF !important;
+  border-radius: 50% !important;
+  background-color: #0082FF !important;
+}
+
+/* 애니메이션바 버튼 부분 */
+.animation-btn-container {
+  display: flex;
+  -webkit-margin-end: 8px;
+  margin-inline-end: 8px;
+
+  width: 90px;
+  padding: 0px 10px;
+}
+
+.animation-btn-container > button {
+  width: 20px;
+  height: 20px;
+  margin-left: 1px;
+  margin-right: 1px;
+  background-color: black;
+  color: white;
+  font-size: 5px;
+  padding: 1px;
+}
+
+.animation-btn-container > button.active {
+  background-color: #0082FF !important;
+}
